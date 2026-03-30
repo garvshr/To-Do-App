@@ -5,8 +5,8 @@ const { getTodos, createTodo, updateTodos, deleteTodo} = require('../controllers
 
 
 router.get('/', getTodos);
-router.post('/create', createTodo);
-router.put('/update/:id', updateTodos);
-router.delete('/delete/:id', deleteTodo);
+router.post('/', createTodo);
+router.put('/:id', updateTodos);
+router.delete('/:id', deleteTodo);
 
 module.exports = router;
